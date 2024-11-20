@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/all_expensess.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 class DashboardDisktopLayout extends StatelessWidget {
@@ -9,6 +10,12 @@ class DashboardDisktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(child: CustomDrawer()),
+        SizedBox(width: 32),
+        Expanded(child: Column(
+          children: [
+            AllExpensess(),
+          ],
+        )),
       ],
     );
   }
