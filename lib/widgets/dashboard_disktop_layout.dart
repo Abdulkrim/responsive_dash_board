@@ -11,7 +11,9 @@ class DashboardDisktopLayout extends StatelessWidget {
       children: [
         Expanded(child: CustomDrawer()),
         SizedBox(width: 32),
-        Expanded(child: Column(
+        Expanded(
+          flex: 2,
+          child: Column(
           children: [
             AllExpensess(),
           ],
