@@ -3,32 +3,32 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, required this.hint});
-  final String hint; 
+  final String hint;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        hintStyle: AppStyles.styleRegular16(context).copyWith(
-          color: const Color(0xFFAAAAAA)
-        ),
+        hintStyle: AppStyles.styleRegular16(context)
+            .copyWith(color: const Color(0xFFAAAAAA)),
         hintText: hint,
         fillColor: const Color(0xFFFAFAFA),
         filled: true,
         border: buildBorder(),
-        enabledBorder: const OutlineInputBorder(),
-        focusedBorder: const OutlineInputBorder(),
-        errorBorder:  const OutlineInputBorder(),
-        disabledBorder:  const OutlineInputBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(),
+        focusedErrorBorder: buildBorder(),
+        errorBorder: buildBorder(),
+        disabledBorder: buildBorder(),
       ),
     );
   }
 
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
-      color: Color(0xFFFAFAFA),
-    ));
+        borderRadius: BorderRadius.circular(12),
+        borderSide: const BorderSide(
+          color: Color(0xFFFAFAFA),
+        ));
   }
 }
