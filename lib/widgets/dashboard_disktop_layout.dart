@@ -17,9 +17,9 @@ class DashboardDisktopLayout extends StatelessWidget {
           child: Column(
           children: [
             AllExpensess(),
-            SizedBox(
-              height: 24,
-            ),
+            // SizedBox(
+            //   height: 24,
+            // ),
             QuickInvoice(), 
           ],
         )),
