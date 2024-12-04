@@ -1,5 +1,9 @@
 import '../utils/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:responsive_dash_board/utils/app_styles.dart';
+
+
 
 
 class MyCard extends StatelessWidget {
@@ -16,6 +20,21 @@ class MyCard extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
+        ),
+        child: Column(
+          children: [
+            ListTile(
+              contentPadding: const EdgeInsets.only(left: 31, right:42,top: 16),
+              title: Text("Name card",
+              style: AppStyles.styleRegular16(context).copyWith(
+                color: Colors.white,
+              ),
+              ),
+              subtitle: Text("Syah Bandi",
+              style: AppStyles.styleMedium20(context),
+            ),
+            trailing: SvgPicture.asset(Assets.imagesGallery),
+        )],
         ),
       ),
     );

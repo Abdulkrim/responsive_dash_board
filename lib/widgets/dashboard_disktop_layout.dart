@@ -18,6 +18,7 @@ class DashboardDisktopLayout extends StatelessWidget {
           child: SingleChildScrollView(
             child: AllExpensessAndQuickInvoiceSection(),
           )),
+           SizedBox(width: 24),
         Expanded(
           child: MyCard()
           ),  
