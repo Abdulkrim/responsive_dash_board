@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'all_expensess_and_quick_invoice_item.dart';
+import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 
 
@@ -17,6 +18,9 @@ class DashboardDisktopLayout extends StatelessWidget {
           child: SingleChildScrollView(
             child: AllExpensessAndQuickInvoiceSection(),
           )),
+        Expanded(
+          child: MyCard()
+          ),  
           
       ],
     );
