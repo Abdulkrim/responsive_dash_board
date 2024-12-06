@@ -1,7 +1,8 @@
+import 'my_card_page_view.dart';
 import 'package:flutter/material.dart';
 import 'all_expensess_and_quick_invoice_item.dart';
-import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
+
 
 
 class DashboardDisktopLayout extends StatelessWidget {
@@ -20,7 +21,7 @@ class DashboardDisktopLayout extends StatelessWidget {
           )),
            SizedBox(width: 24),
         Expanded(
-          child: MyCard()
+          child: MyCardPageView()
           ),  
           
       ],
