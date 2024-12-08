@@ -5,6 +5,8 @@ import 'all_expensess_and_quick_invoice_item.dart';
 import 'package:responsive_dash_board/widgets/custom_dot.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/dots_indicator.dart';
+import 'package:responsive_dash_board/widgets/transaction_history.dart';
+
 
 class DashboardDisktopLayout extends StatelessWidget {
   const DashboardDisktopLayout({super.key});
@@ -21,7 +23,7 @@ class DashboardDisktopLayout extends StatelessWidget {
               child: AllExpensessAndQuickInvoiceSection(),
             )),
         SizedBox(width: 24),
-        Expanded(child: MyCardsSections())
+        Expanded(child: TransactionHistory())
       ],
     );
   }
