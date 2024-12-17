@@ -1,6 +1,9 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/item_details.dart';
 import 'package:responsive_dash_board/models/item_details_model.dart';
+
+
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails({super.key});
@@ -16,7 +19,9 @@ class IncomeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.sizeOf(context).width.toString());
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: items.map((e) =>  ItemDetails(itemDetailsModel:e)).toList(),
     );
     // return ListView.builder(
